@@ -1,6 +1,6 @@
 package KingMod;
 
-import KingMod.Block.KingWood;
+import KingMod.Block.SampleWood;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -35,10 +35,10 @@ public class KingMod {
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
         loadMetadata(metadata);
-        Block kingWood0 = new KingWood(0);
-        Block kingWood1 = new KingWood(1);
-        Block kingWood2 = new KingWood(2);
-        Block kingWood3 = new KingWood(3);
+        Block kingWood0 = new SampleWood(0);
+        Block kingWood1 = new SampleWood(1);
+        Block kingWood2 = new SampleWood(2);
+        Block kingWood3 = new SampleWood(3);
         GameRegistry.registerBlock(kingWood0,kingWood0.getUnlocalizedName());
         GameRegistry.registerBlock(kingWood1,kingWood1.getUnlocalizedName());
         GameRegistry.registerBlock(kingWood2,kingWood2.getUnlocalizedName());
