@@ -1,0 +1,13 @@
+Recipe1:(x=ŠÛÎ,y=–ØŞ,z=‰˜‚ê‚½ƒ`ƒbƒv)
+
+x y =z(8)
+
+
+Recipe2:(x=ŠD,y=“y,z=”ì‚¦‚½“y)
+
+x y =z(1)
+
+
+Recipe3:(x=ŠD,y=¬”,z=”ì—¿)
+
+x y =z

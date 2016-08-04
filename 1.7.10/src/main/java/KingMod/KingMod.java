@@ -1,10 +1,13 @@
 package KingMod;
 
+import KingMod.Block.KingWood;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -32,11 +35,19 @@ public class KingMod {
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
         loadMetadata(metadata);
+        Block kingWood0 = new KingWood(0);
+        Block kingWood1 = new KingWood(1);
+        Block kingWood2 = new KingWood(2);
+        Block kingWood3 = new KingWood(3);
+        GameRegistry.registerBlock(kingWood0,kingWood0.getUnlocalizedName());
+        GameRegistry.registerBlock(kingWood1,kingWood1.getUnlocalizedName());
+        GameRegistry.registerBlock(kingWood2,kingWood2.getUnlocalizedName());
+        GameRegistry.registerBlock(kingWood3,kingWood3.getUnlocalizedName());
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-        
+
     }
 
     @Mod.EventHandler
@@ -49,7 +60,7 @@ public class KingMod {
         LinkedList<String> authors = new LinkedList<>();
         authors.add("C6H2Cl2");
         authors.add("come25136");
-        authors.add("TheWorld_of_Takumi");
+        authors.add("world_of_the_takumi");
         authors.add("chibivaru");
         authors.add("Hayabusa");
         authors.add("Iberigorilla");
