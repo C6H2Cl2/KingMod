@@ -6,18 +6,15 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLog;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
-import net.minecraft.world.World;
 
 /**
  * Created by C6H2Cl2 on 2016/08/04.
  */
-public class SampleWood extends BlockLog {
-    int num;
-    public SampleWood(int n){
+public class BlockKingWood extends BlockLog {
+    public BlockKingWood(){
         super();
-        setBlockName("SampleWood_"+n);
         setCreativeTab(KingMod.tabKingMod);
-        num = n;
+        setBlockName("KingWood");
     }
 
     @SideOnly(Side.CLIENT)
@@ -25,7 +22,7 @@ public class SampleWood extends BlockLog {
     {
         this.field_150167_a = new IIcon[1];
         this.field_150166_b = new IIcon[1];
-        this.field_150167_a[0] = register.registerIcon("kingmod:" + "KingWood_" + num);
-        this.field_150166_b[0] = register.registerIcon("kingmod:" + "KingWood_" + num + "_top");
+        this.field_150167_a[0] = register.registerIcon("kingmod:" + "KingWood");
+        this.field_150166_b[0] = register.registerIcon("kingmod:" + "KingWood" + "_top");
     }
 }
