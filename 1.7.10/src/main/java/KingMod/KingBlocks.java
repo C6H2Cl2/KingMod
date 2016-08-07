@@ -1,5 +1,6 @@
 package KingMod;
 
+import KingMod.Block.BlockKingSapling;
 import KingMod.Block.BlockKingWood;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -8,8 +9,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
  */
 public class KingBlocks {
     public static final BlockKingWood kingWood = new BlockKingWood();
+    public static final BlockKingSapling kingSapling = new BlockKingSapling();
 
     static void registerBlocks(){
         GameRegistry.registerBlock(kingWood,kingWood.getUnlocalizedName());
+        GameRegistry.registerBlock(kingSapling,kingSapling.getUnlocalizedName());
     }
 }
